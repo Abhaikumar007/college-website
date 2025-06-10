@@ -1,0 +1,930 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <title>VKCET</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body data-scroll-container>
+    <header class="header">
+        <!-- Add mobile header -->
+        <div class="mobile__header container">
+            <img class="mobile__logo" src="https://vkcet.com/wp-content/uploads/2019/06/vkcetlogoTransparent-150x150.png" alt="VKCET">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Update mobile navigation -->
+        <div class="mobile__nav">
+            <div class="mobile__nav__top">
+                <div class="mobile__nav__close">
+                    <i class="ri-close-line"></i>
+                </div>
+                <div class="mobile__nav__header">
+                    <a href="#" class="mobile__nav__button login nav__link__button">LOGIN/SIGNUP</a>
+                    <a href="#" class="mobile__nav__button contact nav__link__button">CONTACT US</a>
+                </div>
+            </div>
+            
+            <!-- Main menu -->
+            <div class="mobile__menu main-menu active">
+                <a href="#">HOME</a>
+                <a href="#" class="has-dropdown" data-target="about-menu">
+                    ABOUT US <i class="ri-arrow-right-s-line"></i>
+                </a>
+                <a href="#" class="has-dropdown" data-target="students-menu">
+                    STUDENTS <i class="ri-arrow-right-s-line"></i>
+                </a>
+                <a href="#" class="has-dropdown" data-target="placements-menu">
+                    PLACEMENTS <i class="ri-arrow-right-s-line"></i>
+                </a>
+                <a href="#" class="has-dropdown" data-target="academic-menu">
+                    ACADEMIC <i class="ri-arrow-right-s-line"></i>
+                </a>
+                <a href="#" class="has-dropdown" data-target="admission-menu">
+                    ADMISSION <i class="ri-arrow-right-s-line"></i>
+                </a>
+            </div>
+
+            <!-- About Us submenu -->
+            <div class="mobile__menu submenu" id="about-menu">
+                <div class="submenu__header">
+                    <a href="#" class="back-btn"><i class="ri-arrow-left-s-line"></i> Back</a>
+                    <h3>About Us</h3>
+                </div>
+                <div class="submenu__content">
+                    <div class="submenu__group">
+                        <h4>Overview</h4>
+                        <ul>
+                            <li><a href="#">About VKCET</a></li>
+                            <li><a href="#">Vision & Mission</a></li>
+                            <li><a href="#">Achievements</a></li>
+                        </ul>
+                    </div>
+                    <!-- Copy other groups from desktop nav -->
+                </div>
+            </div>
+
+            <!-- Repeat similar structure for other submenus -->
+            <div class="mobile__menu submenu" id="students-menu">
+                <div class="submenu__header">
+                    <a href="#" class="back-btn"><i class="ri-arrow-left-s-line"></i> Back</a>
+                    <h3>Students</h3>
+                </div>
+                <div class="submenu__content">
+                    <div class="submenu__group">
+                        <h4>Campus Life</h4>
+                        <ul>
+                            <li><a href="#">NSS</a></li>
+                            <li><a href="#">NPTEL</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu__group">
+                        <h4>Facilities</h4>
+                        <ul>
+                            <li><a href="#">Central Library</a></li>
+                            <li><a href="#">Cafeteria</a></li>
+                            <li><a href="#">Hostel</a></li>
+                            <li><a href="#">Transportation</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu__group">
+                        <h4>Student Support</h4>
+                        <ul>
+                            <li><a href="#">Alumni</a></li>
+                            <li><a href="#">Grievance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat similar structure for other submenus -->
+            <div class="mobile__menu submenu" id="placements-menu">
+                <div class="submenu__header">
+                    <a href="#" class="back-btn"><i class="ri-arrow-left-s-line"></i> Back</a>
+                    <h3>Placements</h3>
+                </div>
+                <div class="submenu__content">
+                    <div class="submenu__group">
+                        <h4>Placement Cell</h4>
+                        <ul>
+                            <li><a href="#">About Placement</a></li>
+                            <li><a href="#">Placement Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu__group">
+                        <h4>Opportunities</h4>
+                        <ul>
+                            <li><a href="#">Upcoming Drives</a></li>
+                            <li><a href="#">Placement Results</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="submenu__group">
+                        <h4>Success Stories</h4>
+                        <ul>
+                            <li><a href="#">Students Placed</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="mobile__menu submenu" id="academic-menu">
+            <div class="submenu__header">
+                <a href="#" class="back-btn"><i class="ri-arrow-left-s-line"></i> Back</a>
+                <h3>Academic</h3>
+            </div>
+            <div class="submenu__content">
+                <div class="submenu__group">
+                    <h4>Engineering</h4>
+                    <ul>
+                        <li><a href="#">Computer Science Engineering</a></li>
+                        <li><a href="#">CSE (Cyber Security)</a></li>
+                        <li><a href="#">Civil Engineering</a></li>
+                    </ul>
+                </div>
+                <div class="submenu__group">
+                    <h4>Engineering</h4>
+                    <ul>
+                        <li><a href="#">Electrical & Electronics</a></li>
+                        <li><a href="#">Mechanical Engineering</a></li>
+                        <li><a href="#">Electronics & Communication</a></li>
+                    </ul>
+                </div>
+                <div class="submenu__group">
+                    <h4>Other Departments</h4>
+                    <ul>
+                        <li><a href="#">Applied Sciences</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mobile__menu submenu" id="admission-menu">
+            <div class="submenu__header">
+                <a href="#" class="back-btn"><i class="ri-arrow-left-s-line"></i> Back</a>
+                <h3>Admission</h3>
+            </div>
+            <div class="submenu__content">
+                <div class="submenu__group">
+                    <h4>Admission Process</h4>
+                    <ul>
+                        <li><a href="#">How to Apply</a></li>
+                        <li><a href="#">Online Application</a></li>
+                        <li><a href="#">Courses Offered</a></li>
+                    </ul>
+                </div>
+                <div class="submenu__group">
+                    <h4>Financial Details</h4>
+                    <ul>
+                        <li><a href="#">Fee Payment Details</a></li>
+                        <li><a href="#">Scholarship</a></li>
+                        <li><a href="#">AICTE TFW Scheme</a></li>
+
+                    </ul>
+                </div>
+                <div class="submenu__group">
+                    <h4>Important info</h4>
+                    <ul>
+                        <li><a href="#">AICTE Approval Details</a></li>
+                        <li><a href="#">Notifications</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav container">
+            <ul class="nav__menu">
+                <div class="left__nav">
+                    <li><a href="#" class="nav__link">HOME</a></li>
+                    <li class="nav__link-dropdown">
+                        <a href="#" class="nav__link">ABOUT US <i class="ri-arrow-down-s-line"></i></a>
+                        <div class="dropdown__menu">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Overview</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">About VKCET</a></li>
+                                        <li><a href="#">Vision & Mission</a></li>
+                                        <li><a href="#">Achievements</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Governing Body</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">Founder Chairman</a></li>
+                                        <li><a href="#">Management</a></li>
+                                        <li><a href="#">Principal</a></li>
+                                        <li><a href="#">Department Heads</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Compliance</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">Mandatory Disclosure</a></li>
+                                        <li><a href="#">NIRF Data Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__link-dropdown">
+                        <a href="#" class="nav__link">STUDENTS <i class="ri-arrow-down-s-line"></i></a>
+                        <div class="dropdown__menu">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Campus Life</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">NSS</a></li>
+                                        <li><a href="#">NPTEL</a></li>
+                                        <li><a href="#">Sports</a></li>
+                                        <li><a href="#">Gallery</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Facilities</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">Central Library</a></li>
+                                        <li><a href="#">Cafeteria</a></li>
+                                        <li><a href="#">Hostel</a></li>
+                                        <li><a href="#">Transportation</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Student Support</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">Alumni</a></li>
+                                        <li><a href="#">Grievance</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav__link-dropdown">
+                        <a href="#" class="nav__link">Placements <i class="ri-arrow-down-s-line"></i></a>
+                        <div class="dropdown__menu">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Placement Cell</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">About Placement</a></li>
+                                        <li><a href="#">Placement Contact</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Opportunities</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">Upcoming Drives</a></li>
+                                        <li><a href="#">Results</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Success Stories</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">Students Placed</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="logo">
+                    <img class="nav__image"
+                        src="https://vkcet.com/wp-content/uploads/2019/06/vkcetlogoTransparent-150x150.png">
+                </div>
+                <div class="right__nav">
+                    <li class="nav__link-dropdown">
+                        <a href="#" class="nav__link">ACADEMIC <i class="ri-arrow-down-s-line"></i></a>
+                        <div class="dropdown__menu">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Engineering</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">Computer Science Engineering</a></li>
+                                        <li><a href="#">CSE (Cyber Security)</a></li>
+                                        <li><a href="#">Civil Engineering</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Engineering</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">Electrical & Electronics</a></li>
+                                        <li><a href="#">Mechanical Engineering</a></li>
+                                        <li><a href="#">Electronics & Communication</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Other Departments</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">Applied Sciences</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__link-dropdown">
+                        <a href="#" class="nav__link">ADMISSION <i class="ri-arrow-down-s-line"></i></a>
+                        <div class="dropdown__menu">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Admission Process</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">How to Apply</a></li>
+                                        <li><a href="#">Online Application</a></li>
+                                        <li><a href="#">Courses Offered</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Financial Details</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">Fee Payment Details</a></li>
+                                        <li><a href="#">Scholarship</a></li>
+                                        <li><a href="#">AICTE TFW Scheme</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <h3 class="dropdown__title">Important Info</h3>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#">AICTE Approval Details</a></li>
+                                        <li><a href="#">Notifications</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#" class="nav__link__button">LOGIN/SIGNUP</a></li>
+                    <li><a href="#" class="nav__link__button">CONTACT US</a></li>
+                </div>
+            </ul>
+
+        </nav>
+
+    </header>
+    <div class="header__list__nav">
+        
+    </div>
+    <main class="main__container">
+        <div class="media__container">
+            <video class="media__video" src="video.mkv" autoplay loop muted playsinline></video>
+            <div class="media__overlay"></div>
+            <div class="media__text">YOUR <span class="media__text__highlight1">FUTURE</span> <span class="media__text__highlight">BEGINS</span></div>
+            <i class="ri-volume-mute-line sound-icon" id="soundIcon"></i>
+        </div>
+        <section class="section">
+            <div class="section__container1">
+                <div class="section__container">
+                    <div class="quote__box">
+                        <div class="quote__text">
+                            <i class="ri-double-quotes-l"></i>
+                            <p id="quote"></p>
+                        </div>
+                        <div class="author__info">
+                            <h3 id="authorName"></h3>
+                            <p id="authorRole"></p>
+                        </div>
+                        <div class="quote__author">
+                            <img id="authorImage" alt="author">
+                        </div>
+                    </div>
+                    <h1 class="fallback__text">VKCET EMPOWERS ME</h1>
+                </div>
+            </div>
+            <!-- <marquee class="section__title"><span id="">This text will scroll from right to left</span></marquee> -->
+        </section>
+        
+        <section class="programs">
+            <h1 class="title__card">EXPLORE OUR PROGRAMS</h1>
+            <p class="program__p">Discover diverse engineering programs designed to transform your passion into expertise</p>
+            <div class="cards">
+                <div class="cards__solo">
+
+
+                    <i class="ri-arrow-right-circle-line"></i>
+                    <div class="shadow"></div> <img src="programming.jpg">
+                    <h3 class="card__text">Computer Science <br> Engineering<i class="ri-arrow-right-s-fill"></i></h3>
+                </div>
+                <div class="cards__solo">
+
+                    <i class="ri-arrow-right-circle-line"></i>
+                    <div class="shadow"></div> <img src="cyber.jpg">
+                    <h3 class="card__text">Cyber Security<i class="ri-arrow-right-s-fill"></i></h3>
+                </div>
+                <div class="cards__solo">
+
+                    <i class="ri-arrow-right-circle-line"></i>
+                    <div class="shadow"></div> <img src="civil.jpg">
+                    <h3 class="card__text">Civil Engineering<i class="ri-arrow-right-s-fill"></i></h3>
+
+                </div>
+                <div class="cards__solo">
+
+                    <i class="ri-arrow-right-circle-line"></i>
+                    <div class="shadow"> </div> <img src="mechanical.jpg">
+
+                    <h3 class="card__text">Mechanical Engineering<i class="ri-arrow-right-s-fill"></i></h3>
+                </div>
+                <div class="cards__solo">
+
+                    <i class="ri-arrow-right-circle-line"></i>
+
+                    <div class="shadow"></div> <img src="electrical.jpg">
+
+                    <h3 class="card__text">Electrical and Electronics Engineering<i class="ri-arrow-right-s-fill"></i>
+                    </h3>
+                </div>
+                <div class="cards__solo">
+
+                    <i class="ri-arrow-right-circle-line"></i>
+                    <div class="shadow"> </div><img src="electronics.png">
+
+                    <h3 class="card__text">Electronics and Communication Engineering<i
+                            class="ri-arrow-right-s-fill"></i></h3>
+                </div>
+            </div>
+        </section>
+        <div class="admission_card">
+            <div class="admission__card__text">
+            <h1 class="admission__text">ADMISSIONS</h1>
+              <button class="nav__link__button admission__button">Apply Now</button>
+              </div>
+          </div>
+        <section class="description__college">
+            <h3 class="description__title">College Achievements</h3>
+            <p class="description__para">Don't Just Take Our Word For It.Delve into the Numbers And See The Excellence
+            </p>
+            <div class="description__cards">
+                <div class="description__card">
+                    <div class="description__card__text">
+                        <h1 class="description__card__title">1 Million+</h1>
+                        <p class="description__card__para">Happy Students</p>
+                    </div>
+                    <div class="card__character">
+                        <img src="student.webp" alt="">
+                    </div>
+                </div>
+                <div class="description__card" style="background-color: rgb(255, 238, 238);">
+                    <div class="description__card__text">
+                        <h1 class="description__card__title">3000+</h1>
+                        <p class="description__card__para">Happy Graduates</p>
+                    </div>
+                    <div class="card__character">
+                        <img src="graduate.png" alt="">
+                    </div>
+                </div>
+                <div class="description__card" style="background-color: rgb(228, 250, 255);">
+                    <div class="description__card__text">
+                        <h1 class="description__card__title">30+</h1>
+                        <p class="description__card__para">Companies for placement</p>
+                    </div>
+                    <div class="card__character">
+                        <img src="clubs.png" alt="">
+                    </div>
+                </div>
+                <div class="description__card" style="background-color: rgb(236, 231, 255);">
+                    <div class="description__card__text">
+                        <h1 class="description__card__title">50+</h1>
+                        <p class="description__card__para">Experienced Faculty</p>
+                    </div>
+                    <div class="card__character">
+                        <img src="teacher.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="academics">
+            <div class="academic_title">
+                <h1 class="title__card title_academic">Academic Excellence</h1>
+                <p class="p_academics">Giving wings to a million dreams, a million more to go</p>
+            </div>
+            <div class="container__academics">
+
+                <div class="swiper-container my-gallery">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"
+                                class="">
+
+                                <img src='https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/52378409-55d4-43db-883f-0b42604bd1e5.jpg'
+                                    class="slide-image" />
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"
+                                class="">
+
+                                <img src='https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/ce2aeed7-445b-42d6-88a4-2d2d378f69c6.webp'
+                                    class="slide-image" />
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"
+                                class="">
+
+                                <img src='https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/282a5045-3cc2-483b-a25e-1cd9fd9e8faa.jpg'
+                                    class="slide-image" />
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"
+                                class="">
+
+                                <img src='https://static.pw.live/5b09189f7285894d9130ccd0/afbb62fd-689e-4a8f-a55f-3b63ba6f32fb.webp'
+                                    class="slide-image" />
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"
+                                class="">
+
+                                <img src='https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/664fccf5-80c4-49e4-b335-c5a9eb08d418.jpeg'
+                                    class="slide-image" />
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"
+                                class="">
+
+                                <img src='https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/abbe8fc6-8ba6-43e5-aa98-14d49dd9570b.jpg'
+                                    class="slide-image" />
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+
+
+
+
+        <section class="voice">
+            
+            <div class="voice__first__title">
+            <h1 class="voice__title"><span class="voice__highlight">VKCET</span> VOICES <i class="ri-speak-line"></i></h1>
+            <p class="voice__para">Our students' testimonials reflect their growth, success, and the lasting impact of their VKCET journey.</p>
+            
+        </div>
+            <div class='app'>
+                <section class="splide" aria-label="Testimonial Slider">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <!-- Slide 01 -->
+                            <li class="splide__slide">
+                                <div class="testimonial">
+                                    <div class="pic">
+                                        <img
+                                            src="https://vkcet.com/wp-content/uploads/2024/06/sree.png">
+                                    </div>
+                                    <p class="description">
+                                        VKCET is comparatively better than other colleges. The Faculties are a blessing to the students.The friendly environment, the systematic approach towards imparting education at VKCET made me kick-start my passionate career
+                                    </p>
+                                    <h3 class="title">SreeHari B S</h3>
+                                    <small class="post">Application Engineer, Oracle</small>
+                                </div>
+                            </li>
+                            <!-- Slide 02 -->
+                            <li class="splide__slide">
+                                <div class="testimonial">
+                                    <div class="pic">
+                                        <img
+                                            src="https://vkcet.com/wp-content/uploads/2024/06/yadhu.jpg">
+                                    </div>
+                                    <p class="description">
+                                        VKCET has been a greatcontributor to the development of my personality. The entire faculty and department leave no stone unturned to shape one's future.Huge respect, love, and devotion for entire faculty members and department.</p>
+                                    <h3 class="title">YADHU KRISHNAN</h3>
+                                    <small class="post">- Engineer Tech Mahindra</small>
+                                </div>
+                            </li>
+                            <!-- Slide 03 -->
+                            <li class="splide__slide">
+                                <div class="testimonial">
+                                    <div class="pic">
+                                        <img
+                                            src="https://vkcet.com/wp-content/uploads/2024/06/jibin.png">
+                                    </div>
+                                    <p class="description">
+                                       The ambience of the college has always been so positive and has encouraged me to learn. The 4 years spent with this institution were the best time I had in my life and every moment spent on this campus is still precious.
+                                    </p>
+                                    <h3 class="title">JIBINDAS M</h3>
+                                    <small class="post">- SOFTWARE DEV ,UST GLOBAL</small>
+                                </div>
+                            </li>
+                            <!-- Slide 04 -->
+                            <li class="splide__slide">
+                                <div class="testimonial">
+                                    <div class="pic">
+                                        <img
+                                            src="https://vkcet.com/wp-content/uploads/2024/06/shruthy.jpg">
+                                    </div>
+                                    <p class="description">
+                                        I would like to express my sincere gratitude to vkcet engineering college for helping me at every step in my professional career. This institution and ece department provided me with the best possible platform and infrastructure to excel in my career interest.         </p>
+                                    <h3 class="title">SHRUTHY S</h3>
+                                    <small class="post">-HIL Engineer Tata ELXSI</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+        <section class="clubs">
+            <h2 class="clubs__title">Explore our vibrant Professional<br> Body Chapters & Clubs</h2>
+            <div class="wrapper">
+
+                <div class="items item1"><img src="csi.png">
+                </div>
+                <div class="items item2"><img src="https://vkcet.com/wp-content/uploads/2024/06/iedc2.png">
+                </div>
+                <div class="items item3"><img src="https://vkcet.com/wp-content/uploads/2024/06/iei2.jpg">
+                </div>
+                <div class="items item4"><img src="https://vkcet.com/wp-content/uploads/2024/06/nssl.jpeg">
+                </div>
+                <div class="items item5"><img src="https://vkcet.com/wp-content/uploads/2024/06/nptellogo.png">
+                </div>
+
+
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="vkcet">
+        <div class="footer__image">
+            <img src="https://vkcet.com/wp-content/uploads/2019/06/vkcetlogoTransparent-231x300.png">
+            <p style="color:white; margin-top:10px;">Your Trusted Institution</p>
+            <div class="footer__social__media">
+                <i class="ri-facebook-box-fill"></i>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-linkedin-box-fill"></i>
+                <i class="ri-youtube-fill"></i><i class="ri-twitter-x-fill"></i>
+            </div>
+        </div>
+        <div class="footer__cards">
+            <div class="card1">
+
+                <ul class="card1__list">
+                    <h3 class="card1__title">QUICK LINKS</h3>
+                    <li class="card1__list__items"><a href="#">Admission</a></li>
+                    <li class="card1__list__items"><a href="#">Fee Payment Details</a></li>
+                    <li class="card1__list__items"><a href="#">Placements</a></li>
+                    <li class="card1__list__items"><a href="#">Mandatory Disclosure</a></li>
+                    <li class="card1__list__items"><a href="#">Management</a></li>
+                    <li class="card1__list__items"><a href="#">Gallery</a></li>
+                    <li class="card1__list__items"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="card2">
+
+                <ul class="card2__list">
+                    <h3 class="card2__title">COURSES</h3>
+                    <li class="card2__list__items"><a href="#">Computer Science & Engineering</a></li>
+                    <li class="card2__list__items"><a href="#">Computer Science & Engineering (Cyber Security)</a></li>
+                    <li class="card2__list__items"><a href="#">Civil Engineering</a></li>
+                    <li class="card2__list__items"><a href="#">Mechanical Engineering</a></li>
+                    <li class="card2__list__items"><a href="#">Electrical & Electronics Engineering</a></li>
+                    <li class="card2__list__items"><a href="#">Electronics & Communication Engineering</a></li>
+
+                </ul>
+            </div>
+            <div class="card3">
+
+                <ul class="card3__list">
+                    <h3 class="card3__title">ADDRESS</h3>
+                    <li class="card3__list__items">Valia Koonambaikulathamma College of Engineering and Technology,
+                        Chavarcode ,Paripally P.O, Trivandrum ,Kerala</li>
+                    <li class="card3__list__items">TEL NUMBERS </li>
+                    <li class="card3__list__items">MAIL </li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add before other scripts -->
+    <script src="quotes.js"></script>
+    <!-- ...existing script tags... -->
+    <script>
+    // setInterval(() => {
+    //     window.location.reload();
+    // }, 6000); // 4000 milliseconds = 4 seconds
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        lerp: 0.08,
+        getDirection: true,
+        resetNativeScroll: true,
+        scrollFromAnywhere: true,
+        multiplier: 1
+    });
+
+    // Refresh Locomotive Scroll on page load
+    window.addEventListener('load', () => {
+        scroll.update();
+    });
+
+    // Refresh on window resize
+    window.addEventListener('resize', () => {
+        scroll.update();
+    });
+
+    // GSAP ScrollTrigger integration with Locomotive Scroll
+    gsap.registerPlugin(ScrollTrigger);
+
+    scroll.on("scroll", ScrollTrigger.update);
+
+    ScrollTrigger.scrollerProxy("[data-scroll-container]", {
+        scrollTop(value) {
+            return arguments.length ? scroll.scrollTo(value, 0, 0) : scroll.scroll.instance.scroll.y;
+        },
+        getBoundingClientRect() {
+            return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+        },
+        pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed"
+    });
+
+    // GSAP animation for "Explore Our Programs" section
+    gsap.from(".programs", {
+        scrollTrigger: {
+            trigger: ".programs",
+            scroller: "[data-scroll-container]",
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none reverse",
+            markers: false
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1
+    });
+
+    ScrollTrigger.addEventListener("refresh", () => scroll.update());
+    ScrollTrigger.refresh();
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            autoplay: true,
+            interval: 3000,
+        }).mount();
+
+
+
+
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            loop: true,
+            loopedSlides: 8,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            spaceBetween: 4,
+            autoplay: {
+                delay: 3000,
+                touchRatio: 1, // Enables touch interaction for both directions
+                slideToClickedSlide: true, // Move to clicked slide
+            }
+        })
+    });
+</script>
+
+<script>
+                document.querySelector('.main-menu').classList.add('active');
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNav = document.querySelector('.mobile__nav');
+        const dropdownButtons = document.querySelectorAll('.has-dropdown');
+        const backButtons = document.querySelectorAll('.back-btn');
+        const closeButton = document.querySelector('.mobile__nav__close i');
+        
+        hamburger.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+
+            // Automatically click back button to close any open submenu
+            if (!this.classList.contains('active')) {
+                backButtons.forEach(button => {
+                    button.click();
+                });
+            }
+        });
+
+        closeButton.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = '';
+
+            // Close any open submenu
+            document.querySelectorAll('.submenu').forEach(submenu => {
+                submenu.classList.remove('active');
+            });
+            document.querySelector('.main-menu').classList.add('active');
+        });
+
+        dropdownButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = button.getAttribute('data-target');
+                const submenu = document.getElementById(targetId);
+                
+                document.querySelector('.main-menu').classList.remove('active');
+                submenu.classList.add('active');
+            });
+        });
+
+        backButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const submenu = button.closest('.submenu');
+                submenu.classList.remove('active');
+                document.querySelector('.main-menu').classList.add('active');
+            });
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const soundIcon = document.getElementById('soundIcon');
+        const video = document.querySelector('.media__video');
+        const text = document.querySelector('.media__text');
+        const overlay = document.querySelector('.media__overlay');
+
+        soundIcon.addEventListener('click', function() {
+            if (video.muted) {
+                video.muted = false;
+                overlay.style.display = 'none';
+                soundIcon.classList.remove('ri-volume-mute-line');
+                soundIcon.classList.add('ri-volume-up-line');
+                if (text) {
+                    text.style.display = 'none';
+                }
+            } else {
+                video.muted = true;
+                overlay.style.display = 'block';
+                soundIcon.classList.remove('ri-volume-up-line');
+                soundIcon.classList.add('ri-volume-mute-line');
+                if (text) {
+                    text.style.display = 'block';
+                }
+            }
+        });
+    });
+</script>
+
+</html>
